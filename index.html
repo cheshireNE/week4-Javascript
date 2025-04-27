@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bootstrap Navbar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">  
+    <style>
+        /* Open dropdowns on hover */
+        .nav-item.dropdown:hover .dropdown-menu {
+          display: block;
+          margin-top: 0; /* Remove weird spacing */
+        }
+        </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->        
+</head>
+<body>
+    <!-- Navbar will go here -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">CheshireNE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#cheshireNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="cheshireNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Web Design</a></li>
+              <li><a class="dropdown-item" href="#">Photography</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Other Services</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <header class="bg-primary text-white text-center py-5">
+        <h1>Welcome to My Hobbies Page</h1>
+        <p class="lead">Discover my passions and interests!</p>
+    </header>
+<!-- Bootstrap Fancy Hobbies Section -->
+<section id="hobbies" class="container my-5">
+    <h2 class="text-center mb-4">My Hobbies</h2>
+    <p class="text-center mb-5">In my free time, I explore a variety of hobbies that bring creativity, adventure, and peace into my life.</p>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="d-flex align-items-start">
+          <i class="bi bi-book-half fs-1 me-3"></i>
+          <div>
+            <h5>Reading</h5>
+            <p>I enjoy classic literature, adventure novels, and fantasy stories that ignite my imagination.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="d-flex align-items-start">
+          <i class="bi bi-pencil-square fs-1 me-3"></i>
+          <div>
+            <h5>Writing</h5>
+            <p>Writing poems and creative pieces allows me to express my thoughts and emotions freely.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="d-flex align-items-start">
+            <img src="images/tree silouhette near Wilderness park.jpeg" alt="Reading" class="img-fluid me-3" style="width: 64px; height: 64px;">
+          <div>
+            <h5>Photography</h5>
+            <p>Capturing the night sky, storms, sunsets, and natural beauty through my lens is a true passion.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="d-flex align-items-start">
+            <img src="images/fishing bluegills with daddy.jpeg" alt="Reading" class="img-fluid me-3" style="width: 64px; height: 64px;">
+
+          <div>
+            <h5>Fishing</h5>
+            <p>Spending time by lakes and rivers fishing for catfish, bluegill, and carp helps me relax and connect with nature.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="d-flex align-items-start">
+            <img src="images/garden plot in mI.heic" alt="Reading" class="img-fluid me-3" style="width: 64px; height: 64px;">
+          <div>
+            <h5>Gardening</h5>
+            <p>Planting vegetables, greens, and flowers brings life to my surroundings and teaches patience.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="d-flex align-items-start">
+          <i class="bi bi-droplet-half fs-1 me-3"></i>
+          <div>
+            <h5>Kayaking</h5>
+            <p>Kayaking across lakes and rivers in summer offers peace, adventure, and a love for nature.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="d-flex align-items-start">
+          <i class="bi bi-scissors fs-1 me-3"></i>
+          <div>
+            <h5>Crocheting</h5>
+            <p>Creating handmade hats, scarves, and socks is both a creative outlet and a heartfelt gift for loved ones.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="d-flex align-items-start">
+          <i class="bi bi-stack fs-1 me-3"></i>
+          <div>
+            <h5>Origami</h5>
+            <p>Folding intricate paper designs challenges my creativity and sharpens my focus.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="d-flex align-items-start">
+            <img src="images/enjoyng fall leaves.jpeg" alt="Reading" class="img-fluid me-3" style="width: 64px; height: 64px;">
+          <div>
+            <h5>Music</h5>
+            <p>Playing the electronic piano with my son fills our home with joy and strengthens our bond.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="d-flex align-items-start">
+            <img src="images/milky way in mi color.JPEG" alt="Reading" class="img-fluid me-3" style="width: 64px; height: 64px;">
+          <div>
+            <h5>Stargazing</h5>
+            <p>Observing stars, planets, and celestial events inspires awe and curiosity about the universe.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="d-flex align-items-start">
+            <img src="images/golden hour sunset in lincoln.JPEG" alt="Reading" class="img-fluid me-3" style="width: 64px; height: 64px;">
+          <div>
+            <h5>Biking</h5>
+            <p>Riding a bike along scenic trails brings a sense of freedom, energy, and fresh inspiration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Make sure to include Bootstrap CSS and Bootstrap Icons in your page! -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+ 
+  <!-- Bootstrap JS Bundle Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</body>
+  </html>
